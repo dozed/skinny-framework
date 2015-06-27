@@ -9,7 +9,7 @@ import skinny.routing.implicits.RoutesAsImplicits
  *
  * When using this trait, Route can be a RichRoute, so you can call #as(Symbol) method now.
  */
-trait Routes { self: ScalatraBase with SkinnyControllerBase with RoutesAsImplicits =>
+trait Routes { self: org.scalatra.NonMacroDSL.ScalatraBase with SkinnyControllerBase with RoutesAsImplicits =>
 
   /**
    * Pass this controller instance implicitly

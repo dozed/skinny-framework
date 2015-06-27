@@ -8,7 +8,7 @@ import org.scalatra._
  */
 trait FlashFeature extends FlashMapSupport {
 
-  self: org.scalatra.ScalatraBase with RequestScopeFeature =>
+  self: org.scalatra.NonMacroDSL.ScalatraBase with RequestScopeFeature =>
 
   // just set Flash object to request scope
   before() {

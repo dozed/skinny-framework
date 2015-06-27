@@ -1,6 +1,5 @@
 package skinny.controller.feature
 
-import org.scalatra.ScalatraServlet
 import org.scalatra.servlet._
 
 /**
@@ -30,6 +29,6 @@ import org.scalatra.servlet._
  *   fileUpload.mount(ctx)
  * }}}
  */
-trait FileUploadFeature extends FileUploadSupport { self: ScalatraServlet =>
+trait FileUploadFeature extends FileUploadSupport { self: org.scalatra.NonMacroDSL.ScalatraServlet =>
 
 }

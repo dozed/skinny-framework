@@ -6,5 +6,5 @@ package skinny.controller
  * NOTICE: If you'd like to disable Set-Cookie header for session id, configure in web.xml
  */
 trait SkinnyApiServlet
-  extends org.scalatra.ScalatraServlet
+  extends org.scalatra.NonMacroDSL.ScalatraServlet
   with SkinnyControllerBase

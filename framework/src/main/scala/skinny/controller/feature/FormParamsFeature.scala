@@ -7,7 +7,7 @@ import org.scalatra._
 /**
  * Provides formParams/formMultiParams.
  */
-trait FormParamsFeature extends ScalatraBase with QueryParamsFeature {
+trait FormParamsFeature extends org.scalatra.NonMacroDSL.ScalatraBase with QueryParamsFeature {
 
   /**
    * Returns query string multi parameters as a Map value.

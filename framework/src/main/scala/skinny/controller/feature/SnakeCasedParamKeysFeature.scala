@@ -3,7 +3,7 @@ package skinny.controller.feature
 /**
  * Supports snake_case'd keys for parameter names.
  */
-trait SnakeCasedParamKeysFeature extends org.scalatra.ScalatraBase {
+trait SnakeCasedParamKeysFeature extends org.scalatra.NonMacroDSL.ScalatraBase {
 
   /**
    * Defines use snake_case'd keys.

@@ -19,7 +19,7 @@ import skinny.logging.Logging
  * So We've patched ScalatraBase to ignore "org.scalatra.ScalatraFilter.afterFilters.Run" only for Filters.
  * Hope Scalatra to support ignoring "org.scalatra.ScalatraFilter.afterFilters.Run" option to 3rd party.
  */
-trait SkinnyScalatraBase extends ScalatraBase with Logging {
+trait SkinnyScalatraBase extends NonMacroDSL.ScalatraBase with Logging {
 
   override protected def executeRoutes() {
     var result: Any = null

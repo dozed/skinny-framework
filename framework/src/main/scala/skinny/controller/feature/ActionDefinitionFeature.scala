@@ -7,7 +7,7 @@ import org.scalatra._
  * Action definitions for this controller.
  * These definitions will be used for beforeAction/afterAction's only/except.
  */
-trait ActionDefinitionFeature extends ScalatraBase {
+trait ActionDefinitionFeature extends org.scalatra.NonMacroDSL.ScalatraBase {
 
   /**
    * Note: Same action method name should be registered several times.

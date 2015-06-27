@@ -13,6 +13,8 @@ trait SkinnyHttpSession {
 
   def getAttributeOrElseUpdate(name: String, default: Any): Any
 
+  def getAsOrElseUpdate[A](name: String, default: A): A
+
   def getAttribute(name: String): Option[Any]
 
   def getAs[A](name: String): Option[A] = getAttribute(name).map(_.asInstanceOf[A])

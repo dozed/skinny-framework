@@ -6,6 +6,6 @@ import skinny.controller.feature.FileUploadFeature
  * SkinnyController as a Servlet.
  */
 class SkinnyServlet
-  extends org.scalatra.ScalatraServlet
+  extends org.scalatra.NonMacroDSL.ScalatraServlet
   with SkinnyControllerBase
   with SkinnyWebPageControllerFeatures
